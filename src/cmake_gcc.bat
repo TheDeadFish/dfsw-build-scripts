@@ -25,3 +25,10 @@
 ::@mingw32-make
 @ninja
 @popd
+
+:: return useful variables
+@endlocal ^
+ && set BUILD_DIR=%BUILD_DIR% ^
+ && set prefix=%prefix% ^
+ && set LIBX=%LIBX% ^
+ && set CPU=%CPU%
