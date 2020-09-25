@@ -3,5 +3,5 @@
 ) else (
 @call pathcat gcc.exe %PROGRAMS%/progs/mingw-9.2-x86/bin
 )
-@call pathcat cmake.exe %PROGRAMS%/progs/cmake-3.16.2-win64-x64/bin
+@call pathcat cmake.exe %PROGRAMS%/progs/cmake-3.18.2-win32-x86/bin
 set CMAKE_GENERATOR=Ninja

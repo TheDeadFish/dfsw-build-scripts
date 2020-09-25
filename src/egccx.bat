@@ -5,5 +5,6 @@
 )
 @call %~dp0\env_gcc\ccx_env.bat GCC_9.2
 ::@set CMAKE=%PROGRAMS%\progs\cmake-3.16.2-win64-x64\bin\cmake.exe -G "MinGW Makefiles"
-@set CMAKE=%PROGRAMS%\progs\cmake-3.16.2-win64-x64\bin\cmake.exe -G Ninja
+::@set CMAKE=%PROGRAMS%\progs\cmake-3.16.2-win64-x64\bin\cmake.exe -G Ninja
+@set CMAKE=%PROGRAMS%\progs\cmake-3.18.2-win32-x86\bin\cmake.exe -G Ninja
 @set CMAKE2=%CMAKE% -DCMAKE_C_FLAGS="%CFLAGS2%" -DCMAKE_CXX_FLAGS="%CCFLAGS2%"
