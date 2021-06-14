@@ -44,3 +44,10 @@ echo %1
 	@set GCCDIR=mingw-10.2-x64
 )
 )
+
+@if %1==GCC_11.1 (
+	@set GCCDIR=mingw-11.1-x86
+@if %CPU%==x64 (
+	@set GCCDIR=mingw-11.1-x64
+)
+)
