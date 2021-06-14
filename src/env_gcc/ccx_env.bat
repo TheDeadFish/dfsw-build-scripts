@@ -13,9 +13,9 @@
 @set GCCDIR=%CD%\progs\%GCCDIR%
 @path=%path%;%GCCDIR%\%GCCBIN%
 @set prefix=%GCCDIR%\local
-@set C_INCLUDE_PATH=%prefix%\include;%CD%\local\include
-@set CPLUS_INCLUDE_PATH=%GCCDIR%\include;%prefix%\include;%CD%\local\include
-@set LIBRARY_PATH=%prefix%\%LIBX%;%CD%\local\%LIBX%
+@set C_INCLUDE_PATH=%C_INCLUDE_PATH%;%prefix%\include;%CD%\local\include
+@set CPLUS_INCLUDE_PATH=%CPLUS_INCLUDE_PATH%;%GCCDIR%\include;%prefix%\include;%CD%\local\include
+@set LIBRARY_PATH=%LIBRARY_PATH%;%prefix%\%LIBX%;%CD%\local\%LIBX%
 
 :: specific libraries
 @set NTNDK=%CD%\local\devel\ndk
