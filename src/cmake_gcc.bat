@@ -11,8 +11,8 @@
 
 :: select debug mode
 @IF "%1"=="DEBUG" ( SHIFT
- SET BUILD_TYPE="Debug"
-) else ( set LDFLAGS=%LFLAGS% )
+ SET BUILD_TYPE="Debug" && set MWINDOWS=
+) else ( set LDFLAGS=%LFLAGS% && set MWINDOWS=-mwindows)
 
 :: call user command
 @IF "%1"=="CMD" ( SHIFT SHIFT
