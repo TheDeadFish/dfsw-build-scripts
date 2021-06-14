@@ -1,5 +1,5 @@
 :: compiler flags
-@set OFLAGS=-mcmodel=small -fno-diagnostics-color -Os -Wno-narrowing -ffunction-sections -Wno-pointer-arith -fno-strict-overflow -fno-builtin-strlen -Wno-multichar -fno-math-errno -g -fno-lto
+@set OFLAGS=-mcmodel=small -fno-diagnostics-color -Os -Wno-narrowing -ffunction-sections -Wno-pointer-arith -fno-strict-overflow -fno-builtin-strlen -Wno-multichar -fno-math-errno -g -fno-lto -Wno-int-to-pointer-cast
 @set OCCFLG=%OFLAGS% -fno-rtti -std=gnu++2a -Wno-invalid-offsetof -Wno-literal-suffix -Wno-pmf-conversions -fno-sized-deallocation 
 @set WFLAGS=-DUNICODE -D_UNICODE -D_WIN32_WINNT=0x0502 -D_WIN32_IE=0x0603
 @set PUSH_ARG=
